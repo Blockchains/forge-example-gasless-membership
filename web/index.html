@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gasless Membership Club - composed by Blockchain Lab Forge</title>
+  <style>
+    body{font-family:system-ui,sans-serif;background:#0b0f14;color:#e6edf3;max-width:960px;margin:0 auto;padding:24px;line-height:1.5}
+    a{color:#7cc4ff} code{background:#161b22;padding:1px 5px;border-radius:4px}
+    .card{background:#11161d;border:1px solid #253041;border-radius:10px;padding:16px;margin:16px 0}
+    table{width:100%;border-collapse:collapse;font-size:14px} td,th{border-bottom:1px solid #253041;padding:6px;text-align:left;vertical-align:top}
+    button{background:#2f81f7;color:#fff;border:0;border-radius:6px;padding:8px 14px;cursor:pointer} button:disabled{opacity:.5}
+    input{background:#0b0f14;color:#e6edf3;border:1px solid #253041;border-radius:6px;padding:8px;width:100%;box-sizing:border-box}
+    .ok{color:#3fb950}.warn{color:#d29922}.mono{font-family:ui-monospace,monospace;font-size:13px;word-break:break-all}
+  </style>
+</head>
+<body>
+  <h1>Gasless Membership Club</h1>
+  <p>Composed by <a href="https://blockchainlab.com/forge">Blockchain Lab Forge</a> from the idea: <em id="idea"></em></p>
+  <div class="card"><h2>Live: canonical ERC-4337 EntryPoint v0.9 on Sepolia</h2><div id="live">loading...</div>
+    <label>Check any account's EntryPoint deposit and nonce<input id="addr" placeholder="0x..." /></label><div id="acct" class="mono"></div></div>
+  <div class="card"><h2>Deploy the club to Sepolia from your wallet</h2>
+    <p>Deploys <code>SimpleAccountFactory</code>, <code>MembershipNFT</code> and <code>ClubPaymaster</code> with the bytecode compiled in CI, then funds the paymaster with 0.01 ETH. You need Sepolia ETH in an injected wallet.</p>
+    <button id="deploy">Connect wallet and deploy</button><div id="deploylog" class="mono"></div></div>
+  <div class="card"><h2>Component map</h2><p id="lic"></p><table id="map"><thead><tr><th>Capability</th><th>Component</th><th>From</th><th>Licence</th></tr></thead><tbody></tbody></table>
+    <p id="copied"></p></div>
+  <p>Source: <a href="https://github.com/Blockchains/forge-example-gasless-membership">Blockchains/forge-example-gasless-membership</a></p>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

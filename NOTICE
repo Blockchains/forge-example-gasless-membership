@@ -1,0 +1,73 @@
+NOTICE
+
+This project was composed by Blockchain Lab Forge (https://blockchainlab.com/forge) from the following open-source projects.
+Files are copied unmodified, with their original SPDX headers, under lib/<project>/.
+
+- eth-infinitism/account-abstraction (via https://github.com/Blockchains/account-abstraction @ b36a1ed52ae00da6f8a4c8d50181e2877e4fa410 (tag v0.9.0)) - licence: GPL-3.0
+    contracts/accounts/SimpleAccount.sol
+    contracts/accounts/SimpleAccountFactory.sol
+    contracts/accounts/callback/TokenCallbackHandler.sol
+    contracts/core/BaseAccount.sol
+    contracts/core/BasePaymaster.sol
+    contracts/core/Eip7702Support.sol
+    contracts/core/EntryPoint.sol
+    contracts/core/Helpers.sol
+    contracts/core/NonceManager.sol
+    contracts/core/SenderCreator.sol
+    contracts/core/StakeManager.sol
+    contracts/core/Stakeable.sol
+    contracts/core/UserOperationLib.sol
+    contracts/interfaces/IAccount.sol
+    contracts/interfaces/IAccountExecute.sol
+    contracts/interfaces/IAggregator.sol
+    contracts/interfaces/IEntryPoint.sol
+    contracts/interfaces/INonceManager.sol
+    contracts/interfaces/IPaymaster.sol
+    contracts/interfaces/ISenderCreator.sol
+    contracts/interfaces/IStakeManager.sol
+    contracts/interfaces/PackedUserOperation.sol
+    contracts/utils/Exec.sol
+
+- OpenZeppelin/openzeppelin-contracts (via https://github.com/Blockchains/openzeppelin-contracts @ cab19933c33c2ad1d4c7a84864a3601dddfd16f3 (tag v5.7.0)) - licence: MIT
+    contracts/access/AccessControl.sol
+    contracts/access/IAccessControl.sol
+    contracts/access/Ownable.sol
+    contracts/access/Ownable2Step.sol
+    contracts/interfaces/IERC165.sol
+    contracts/interfaces/IERC1967.sol
+    contracts/interfaces/IERC4906.sol
+    contracts/interfaces/IERC5267.sol
+    contracts/interfaces/IERC721.sol
+    contracts/interfaces/draft-IERC1822.sol
+    contracts/interfaces/draft-IERC6093.sol
+    contracts/proxy/ERC1967/ERC1967Proxy.sol
+    contracts/proxy/ERC1967/ERC1967Utils.sol
+    contracts/proxy/Proxy.sol
+    contracts/proxy/beacon/IBeacon.sol
+    contracts/proxy/utils/Initializable.sol
+    contracts/proxy/utils/UUPSUpgradeable.sol
+    contracts/token/ERC1155/IERC1155Receiver.sol
+    contracts/token/ERC721/ERC721.sol
+    contracts/token/ERC721/IERC721.sol
+    contracts/token/ERC721/IERC721Receiver.sol
+    contracts/token/ERC721/extensions/ERC721URIStorage.sol
+    contracts/token/ERC721/extensions/IERC721Metadata.sol
+    contracts/token/ERC721/utils/ERC721Utils.sol
+    contracts/utils/Address.sol
+    contracts/utils/Bytes.sol
+    contracts/utils/Context.sol
+    contracts/utils/Create2.sol
+    contracts/utils/Errors.sol
+    contracts/utils/LowLevelCall.sol
+    contracts/utils/Panic.sol
+    contracts/utils/ShortStrings.sol
+    contracts/utils/StorageSlot.sol
+    contracts/utils/Strings.sol
+    contracts/utils/cryptography/ECDSA.sol
+    contracts/utils/cryptography/EIP712.sol
+    contracts/utils/cryptography/MessageHashUtils.sol
+    contracts/utils/introspection/ERC165.sol
+    contracts/utils/introspection/IERC165.sol
+    contracts/utils/math/Math.sol
+    contracts/utils/math/SafeCast.sol
+    contracts/utils/math/SignedMath.sol

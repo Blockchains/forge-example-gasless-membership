@@ -1,0 +1,291 @@
+{
+ "idea": "Gasless membership club: each member gets a smart account (account abstraction) and mints a membership NFT without holding ETH; the club sponsors gas with a paymaster and an admin role manages who is allowed.",
+ "vm": "EVM",
+ "generated_at": "2026-10-03T18:32:25Z",
+ "capabilities": [
+  {
+   "id": "account-abstraction",
+   "score": 5.846,
+   "why": [
+    "smart account",
+    "account abstraction",
+    "gasless",
+    "paymaster",
+    "semantic z=3.12"
+   ]
+  },
+  {
+   "id": "nft",
+   "score": 1.1,
+   "why": [
+    "nft"
+   ]
+  },
+  {
+   "id": "access-control",
+   "score": 1.1,
+   "why": [
+    "admin"
+   ]
+  }
+ ],
+ "selected": [
+  {
+   "id": "account-abstraction:contracts/core/BasePaymaster.sol:BasePaymaster",
+   "slug": "account-abstraction",
+   "name": "BasePaymaster",
+   "path": "contracts/core/BasePaymaster.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": 2.858,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/core/BasePaymaster.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "primary"
+  },
+  {
+   "id": "account-abstraction:contracts/accounts/SimpleAccount.sol:SimpleAccount",
+   "slug": "account-abstraction",
+   "name": "SimpleAccount",
+   "path": "contracts/accounts/SimpleAccount.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/accounts/SimpleAccount.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "account-abstraction:contracts/accounts/SimpleAccountFactory.sol:SimpleAccountFactory",
+   "slug": "account-abstraction",
+   "name": "SimpleAccountFactory",
+   "path": "contracts/accounts/SimpleAccountFactory.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/accounts/SimpleAccountFactory.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "account-abstraction:contracts/core/EntryPoint.sol:EntryPoint",
+   "slug": "account-abstraction",
+   "name": "EntryPoint",
+   "path": "contracts/core/EntryPoint.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "GPL-3.0",
+   "license_class": "strong-copyleft",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/core/EntryPoint.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/token/ERC721/ERC721.sol:ERC721",
+   "slug": "openzeppelin-contracts",
+   "name": "ERC721",
+   "path": "contracts/token/ERC721/ERC721.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.24",
+   "score": 3.087,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/ERC721.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "nft",
+   "role": "primary"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage",
+   "slug": "openzeppelin-contracts",
+   "name": "ERC721URIStorage",
+   "path": "contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.24",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "nft",
+   "role": "companion"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/access/AccessControl.sol:AccessControl",
+   "slug": "openzeppelin-contracts",
+   "name": "AccessControl",
+   "path": "contracts/access/AccessControl.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.20",
+   "score": 3.288,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/access/AccessControl.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "access-control",
+   "role": "primary"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/access/Ownable.sol:Ownable",
+   "slug": "openzeppelin-contracts",
+   "name": "Ownable",
+   "path": "contracts/access/Ownable.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.20",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/access/Ownable.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "access-control",
+   "role": "companion"
+  }
+ ],
+ "alternatives": {
+  "account-abstraction": [
+   {
+    "id": "account-abstraction:contracts/accounts/SimpleAccount.sol:SimpleAccount",
+    "slug": "account-abstraction",
+    "name": "SimpleAccount",
+    "path": "contracts/accounts/SimpleAccount.sol",
+    "kind": "contract",
+    "lang": "Solidity",
+    "license": "MIT",
+    "license_class": "permissive",
+    "pragma": "^0.8.28",
+    "score": 2.658,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/accounts/SimpleAccount.sol",
+    "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+    "fork": "Blockchains/account-abstraction",
+    "upstream": "eth-infinitism/account-abstraction"
+   },
+   {
+    "id": "account-abstraction:contracts/core/EntryPoint.sol:EntryPoint",
+    "slug": "account-abstraction",
+    "name": "EntryPoint",
+    "path": "contracts/core/EntryPoint.sol",
+    "kind": "contract",
+    "lang": "Solidity",
+    "license": "GPL-3.0",
+    "license_class": "strong-copyleft",
+    "pragma": "^0.8.28",
+    "score": 2.358,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/core/EntryPoint.sol",
+    "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+    "fork": "Blockchains/account-abstraction",
+    "upstream": "eth-infinitism/account-abstraction"
+   }
+  ],
+  "nft": [
+   {
+    "id": "openzeppelin-contracts:contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage",
+    "slug": "openzeppelin-contracts",
+    "name": "ERC721URIStorage",
+    "path": "contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+    "kind": "abstract contract",
+    "lang": "Solidity",
+    "license": "MIT",
+    "license_class": "permissive",
+    "pragma": "^0.8.24",
+    "score": 3.087,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+    "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+    "fork": "Blockchains/openzeppelin-contracts",
+    "upstream": "OpenZeppelin/openzeppelin-contracts"
+   },
+   {
+    "id": "openzeppelin-contracts:contracts/token/ERC721/extensions/ERC721Burnable.sol:ERC721Burnable",
+    "slug": "openzeppelin-contracts",
+    "name": "ERC721Burnable",
+    "path": "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+    "kind": "abstract contract",
+    "lang": "Solidity",
+    "license": "MIT",
+    "license_class": "permissive",
+    "pragma": "^0.8.24",
+    "score": 1.887,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+    "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+    "fork": "Blockchains/openzeppelin-contracts",
+    "upstream": "OpenZeppelin/openzeppelin-contracts"
+   }
+  ],
+  "access-control": [
+   {
+    "id": "openzeppelin-contracts:contracts/access/Ownable.sol:Ownable",
+    "slug": "openzeppelin-contracts",
+    "name": "Ownable",
+    "path": "contracts/access/Ownable.sol",
+    "kind": "abstract contract",
+    "lang": "Solidity",
+    "license": "MIT",
+    "license_class": "permissive",
+    "pragma": "^0.8.20",
+    "score": 3.087,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/access/Ownable.sol",
+    "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+    "fork": "Blockchains/openzeppelin-contracts",
+    "upstream": "OpenZeppelin/openzeppelin-contracts"
+   },
+   {
+    "id": "openzeppelin-contracts:fv/harnesses/AccessControlHarness.sol:AccessControlHarness",
+    "slug": "openzeppelin-contracts",
+    "name": "AccessControlHarness",
+    "path": "fv/harnesses/AccessControlHarness.sol",
+    "kind": "contract",
+    "lang": "Solidity",
+    "license": "MIT",
+    "license_class": "permissive",
+    "pragma": "^0.8.20",
+    "score": 2.088,
+    "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/fv/harnesses/AccessControlHarness.sol",
+    "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+    "fork": "Blockchains/openzeppelin-contracts",
+    "upstream": "OpenZeppelin/openzeppelin-contracts"
+   }
+  ]
+ },
+ "license": {
+  "project_license": "GPL-3.0-or-later",
+  "warning": "Includes strong-copyleft files (GPL-3.0); the composed project is distributed under GPL terms."
+ },
+ "index_generated_at": "2026-10-03T18:32:10Z",
+ "pins": {
+  "account-abstraction": "v0.9.0",
+  "openzeppelin-contracts": "v5.7.0"
+ }
+}

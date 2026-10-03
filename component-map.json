@@ -1,0 +1,837 @@
+{
+ "idea": "Gasless membership club: each member gets a smart account (account abstraction) and mints a membership NFT without holding ETH; the club sponsors gas with a paymaster and an admin role manages who is allowed.",
+ "capabilities": [
+  {
+   "id": "account-abstraction",
+   "score": 5.846,
+   "why": [
+    "smart account",
+    "account abstraction",
+    "gasless",
+    "paymaster",
+    "semantic z=3.12"
+   ]
+  },
+  {
+   "id": "nft",
+   "score": 1.1,
+   "why": [
+    "nft"
+   ]
+  },
+  {
+   "id": "access-control",
+   "score": 1.1,
+   "why": [
+    "admin"
+   ]
+  }
+ ],
+ "selected": [
+  {
+   "id": "account-abstraction:contracts/core/BasePaymaster.sol:BasePaymaster",
+   "slug": "account-abstraction",
+   "name": "BasePaymaster",
+   "path": "contracts/core/BasePaymaster.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": 2.858,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/core/BasePaymaster.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "primary"
+  },
+  {
+   "id": "account-abstraction:contracts/accounts/SimpleAccount.sol:SimpleAccount",
+   "slug": "account-abstraction",
+   "name": "SimpleAccount",
+   "path": "contracts/accounts/SimpleAccount.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/accounts/SimpleAccount.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "account-abstraction:contracts/accounts/SimpleAccountFactory.sol:SimpleAccountFactory",
+   "slug": "account-abstraction",
+   "name": "SimpleAccountFactory",
+   "path": "contracts/accounts/SimpleAccountFactory.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/accounts/SimpleAccountFactory.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "account-abstraction:contracts/core/EntryPoint.sol:EntryPoint",
+   "slug": "account-abstraction",
+   "name": "EntryPoint",
+   "path": "contracts/core/EntryPoint.sol",
+   "kind": "contract",
+   "lang": "Solidity",
+   "license": "GPL-3.0",
+   "license_class": "strong-copyleft",
+   "pragma": "^0.8.28",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/account-abstraction/develop/contracts/core/EntryPoint.sol",
+   "commit": "1c6b669d0eea734e09a87e095ba15e076151718a",
+   "fork": "Blockchains/account-abstraction",
+   "upstream": "eth-infinitism/account-abstraction",
+   "capability": "account-abstraction",
+   "role": "companion"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/token/ERC721/ERC721.sol:ERC721",
+   "slug": "openzeppelin-contracts",
+   "name": "ERC721",
+   "path": "contracts/token/ERC721/ERC721.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.24",
+   "score": 3.087,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/ERC721.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "nft",
+   "role": "primary"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage",
+   "slug": "openzeppelin-contracts",
+   "name": "ERC721URIStorage",
+   "path": "contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.24",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "nft",
+   "role": "companion"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/access/AccessControl.sol:AccessControl",
+   "slug": "openzeppelin-contracts",
+   "name": "AccessControl",
+   "path": "contracts/access/AccessControl.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.20",
+   "score": 3.288,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/access/AccessControl.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "access-control",
+   "role": "primary"
+  },
+  {
+   "id": "openzeppelin-contracts:contracts/access/Ownable.sol:Ownable",
+   "slug": "openzeppelin-contracts",
+   "name": "Ownable",
+   "path": "contracts/access/Ownable.sol",
+   "kind": "abstract contract",
+   "lang": "Solidity",
+   "license": "MIT",
+   "license_class": "permissive",
+   "pragma": "^0.8.20",
+   "score": null,
+   "raw_url": "https://raw.githubusercontent.com/Blockchains/openzeppelin-contracts/master/contracts/access/Ownable.sol",
+   "commit": "40a51f7e78852e48d0b128d4ee3d620cbc7d35d8",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "capability": "access-control",
+   "role": "companion"
+  }
+ ],
+ "license": {
+  "project_license": "GPL-3.0-or-later",
+  "warning": "Includes strong-copyleft files (GPL-3.0); the composed project is distributed under GPL terms."
+ },
+ "copied_files": [
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/access/Ownable.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Context.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/access/AccessControl.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/introspection/ERC165.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/introspection/IERC165.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/access/IAccessControl.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/IERC165.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/IERC4906.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/IERC4906.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/IERC721.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/IERC721.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/IERC721.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/extensions/IERC721Metadata.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/ERC721.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/draft-IERC6093.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Strings.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Bytes.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Bytes.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/math/Math.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/math/SafeCast.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Panic.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Panic.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/math/SignedMath.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/utils/ERC721Utils.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/utils/ERC721Utils.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC721/IERC721Receiver.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/EntryPoint.sol",
+   "dest": "lib/account-abstraction/contracts/core/EntryPoint.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/cryptography/EIP712.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/IERC5267.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/IERC5267.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/ShortStrings.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/StorageSlot.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/cryptography/MessageHashUtils.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/utils/Exec.sol",
+   "dest": "lib/account-abstraction/contracts/utils/Exec.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/Eip7702Support.sol",
+   "dest": "lib/account-abstraction/contracts/core/Eip7702Support.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/UserOperationLib.sol",
+   "dest": "lib/account-abstraction/contracts/core/UserOperationLib.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/Helpers.sol",
+   "dest": "lib/account-abstraction/contracts/core/Helpers.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/PackedUserOperation.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/SenderCreator.sol",
+   "dest": "lib/account-abstraction/contracts/core/SenderCreator.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IEntryPoint.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/ISenderCreator.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/ISenderCreator.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/INonceManager.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IAggregator.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IStakeManager.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/NonceManager.sol",
+   "dest": "lib/account-abstraction/contracts/core/NonceManager.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/StakeManager.sol",
+   "dest": "lib/account-abstraction/contracts/core/StakeManager.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IPaymaster.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IPaymaster.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IAccountExecute.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IAccountExecute.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/interfaces/IAccount.sol",
+   "dest": "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/accounts/SimpleAccountFactory.sol",
+   "dest": "lib/account-abstraction/contracts/accounts/SimpleAccountFactory.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/accounts/SimpleAccount.sol",
+   "dest": "lib/account-abstraction/contracts/accounts/SimpleAccount.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/accounts/callback/TokenCallbackHandler.sol",
+   "dest": "lib/account-abstraction/contracts/accounts/callback/TokenCallbackHandler.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/token/ERC1155/IERC1155Receiver.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/BaseAccount.sol",
+   "dest": "lib/account-abstraction/contracts/core/BaseAccount.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/utils/UUPSUpgradeable.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/ERC1967/ERC1967Utils.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Address.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/LowLevelCall.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/LowLevelCall.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Errors.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/IERC1967.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/beacon/IBeacon.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/interfaces/draft-IERC1822.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/utils/Initializable.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/cryptography/ECDSA.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/ERC1967/ERC1967Proxy.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/proxy/Proxy.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/utils/Create2.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/utils/Create2.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/BasePaymaster.sol",
+   "dest": "lib/account-abstraction/contracts/core/BasePaymaster.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "account-abstraction",
+   "path": "contracts/core/Stakeable.sol",
+   "dest": "lib/account-abstraction/contracts/core/Stakeable.sol",
+   "fork": "Blockchains/account-abstraction",
+   "commit": "b36a1ed52ae00da6f8a4c8d50181e2877e4fa410",
+   "tag": "v0.9.0",
+   "upstream": "eth-infinitism/account-abstraction",
+   "license": "GPL-3.0"
+  },
+  {
+   "slug": "openzeppelin-contracts",
+   "path": "contracts/access/Ownable2Step.sol",
+   "dest": "lib/openzeppelin-contracts/contracts/access/Ownable2Step.sol",
+   "fork": "Blockchains/openzeppelin-contracts",
+   "commit": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3",
+   "tag": "v5.7.0",
+   "upstream": "OpenZeppelin/openzeppelin-contracts",
+   "license": "MIT"
+  }
+ ],
+ "remappings": [
+  "@account-abstraction/contracts/=lib/account-abstraction/contracts/",
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+  "account-abstraction/=lib/account-abstraction/contracts/"
+ ]
+}
