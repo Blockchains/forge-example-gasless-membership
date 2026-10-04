@@ -1,0 +1,25 @@
+# forge-example-gasless-membership
+
+> Composed gasless membership club: ERC-721 pass with an approver allowlist (MembershipNFT) and an ERC-4337 paymaster that sponsors exactly the join() UserOperation (ClubPaymaster, extends eth-infinitism BasePaymaster v0.9.0), plus a viem front end.
+
+## Docs
+
+- [README](https://raw.githubusercontent.com/Blockchains/forge-example-gasless-membership/main/README.md): overview, install and the 'Use as a building block' section
+- [AGENTS.md](https://raw.githubusercontent.com/Blockchains/forge-example-gasless-membership/main/AGENTS.md): setup, build/test commands, structure map, conventions and rules for AI coding agents
+- [blocks.json](https://raw.githubusercontent.com/Blockchains/forge-example-gasless-membership/main/blocks.json): machine-readable building-block manifest (entrypoints, inputs, outputs, deps, compatible blocks)
+
+## Key files
+
+- [src/MembershipNFT.sol](https://github.com/Blockchains/forge-example-gasless-membership/blob/main/src/MembershipNFT.sol): contract
+- [src/ClubPaymaster.sol](https://github.com/Blockchains/forge-example-gasless-membership/blob/main/src/ClubPaymaster.sol): contract
+- [component-map.json](https://github.com/Blockchains/forge-example-gasless-membership/blob/main/component-map.json): provenance
+- [NOTICE](https://github.com/Blockchains/forge-example-gasless-membership/blob/main/NOTICE): attribution
+
+## Related
+
+- [Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md): how to assemble projects from Blockchains repos
+- [Org llms.txt](https://blockchains.github.io/llms.txt) · [blocks catalogue](https://blockchains.github.io/blocks.json)
+- [Blockchains/blockchainlab-index](https://github.com/Blockchains/blockchainlab-index): the composer that generated this repo
+- [Blockchains/blockchainlab-index](https://github.com/Blockchains/blockchainlab-index): components were retrieved from the index
+- [Blockchains/blockchainlab-starters](https://github.com/Blockchains/blockchainlab-starters): erc4337-smart-account starter
+- [Blockchains/blockchainlab-sdk](https://github.com/Blockchains/blockchainlab-sdk): RPC health for the front end
