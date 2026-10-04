@@ -57,3 +57,10 @@ Machine-readable: [`component-map.json`](component-map.json) · plan: [`plan.jso
 **GPL-3.0-or-later**. Includes strong-copyleft files (GPL-3.0); the composed project is distributed under GPL terms. Every copied file keeps its original SPDX header. Attribution is in [NOTICE](NOTICE).
 
 Not audited. Review the code yourself before you put real value on mainnet.
+
+## Contributing
+
+Issues and pull requests are welcome. Please read the [contributing guide](https://github.com/Blockchains/.github/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/Blockchains/.github/blob/main/CODE_OF_CONDUCT.md) and [security policy](https://github.com/Blockchains/.github/blob/main/SECURITY.md) first.
+
+---
+Built by Blockchain Lab — [blockchainlab.com](https://blockchainlab.com/?utm_source=github&utm_medium=readme&utm_campaign=forge-example-gasless-membership)
